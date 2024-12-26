@@ -40,7 +40,7 @@ export interface SeoContentDataProps {
     schema: Schema
     title: string
     twitterDescription: string
-    twitterImage: any
+    twitterImage: string
     featuredImageUrl?: string
     slug?: string
     canonicalUrl?: string
