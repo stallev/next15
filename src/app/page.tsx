@@ -16,7 +16,7 @@ export default async function Home() {
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src="https://nextjs.org/icons/next.svg"
           alt="Next.js logo"
           width={180}
           height={38}
@@ -31,6 +31,7 @@ export default async function Home() {
         {
           videosData.finishedVideos.map((video) => <div key={video.id}>{video.title}</div>)
         }
+
         <div className={styles.ctas}>
           <a
             className={styles.primary}
@@ -40,7 +41,7 @@ export default async function Home() {
           >
             <Image
               className={styles.logo}
-              src="/vercel.svg"
+              src="https://nextjs.org/icons/vercel.svg"
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -65,7 +66,7 @@ export default async function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src="https://nextjs.org/icons/file.svg"
             alt="File icon"
             width={16}
             height={16}
@@ -79,7 +80,7 @@ export default async function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src="https://nextjs.org/icons/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -93,7 +94,7 @@ export default async function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src="https://nextjs.org/icons/globe.svg"
             alt="Globe icon"
             width={16}
             height={16}
