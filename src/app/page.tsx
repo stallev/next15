@@ -4,7 +4,7 @@ import { YouTubePlaylistIDs, YouTubeApiKeys } from "@/constants";
 import styles from "./page.module.css";
 import { FetchedVideoItemsList } from "@/types/YouTubeDataTypes";
 
-// export const revalidate = 60;
+export const revalidate = 70;
 
 export default async function Home() {
   const videosData: FetchedVideoItemsList = await YouTubeApiService.getPortionYouTubeStreamsItems(
