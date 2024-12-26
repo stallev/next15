@@ -6,6 +6,15 @@ import { FetchedVideoItemsList } from "@/types/YouTubeDataTypes";
 
 export const revalidate = 60;
 
+export async function generateStaticParams() {
+  const videosData: FetchedVideoItemsList = await YouTubeApiService.getPortionYouTubeStreamsItems(
+    YouTubePlaylistIDs.myStream,
+    YouTubeApiKeys.alexander
+  );
+
+  return videosData;
+}
+
 export default async function Home() {
   const videosData: FetchedVideoItemsList = await YouTubeApiService.getPortionYouTubeStreamsItems(
     YouTubePlaylistIDs.myStream,
