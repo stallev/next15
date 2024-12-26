@@ -25,8 +25,8 @@ class YouTubeApiService {
 
     const url: string = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=${playlistId}&key=${apiKey}&maxResults=10`;
 
-    // const response = await fetch(url, { next: { revalidate: 60 } });
-    const response = await fetch(url);
+    const response = await fetch(url, { next: { revalidate: 60 } });
+    // const response = await fetch(url);
     const data = await response.json();
 
     const videoListIds = data.items
